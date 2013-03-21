@@ -1,25 +1,24 @@
 {
-  "name": "passport-instagram",
-  "version": "0.1.2",
-  "description": "Instagram authentication strategy for Passport.",
-  "keywords": ["passport", "instagram", "auth", "authn", "authentication", "identity"],
+  "name": "passport-eyeem",
+  "version": "0.1.0",
+  "description": "Eyeem authentication strategy for Passport.",
+  "keywords": ["passport", "eyeem", "auth", "authn", "authentication", "identity"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-instagram.git"
+    "url": "git://github.com/elmariachi111/passport-eyeem.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-instagram/issues"
+    "url": "http://github.com/elmariachi111/passport-eyeem/issues"
   },
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Stefan Adolf",
+    "email": "stadolf@gmail.com",
   },
   "licenses": [ {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/MIT" 
   } ],
-  "main": "./lib/passport-instagram",
+  "main": "./lib/passport-eyeem",
   "dependencies": {
     "pkginfo": "0.2.x",
     "passport-oauth": "0.1.x"
