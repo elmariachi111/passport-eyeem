@@ -1,14 +1,14 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var instagram = require('passport-instagram');
+var eyeem = require('passport-eyeem');
 
 
-vows.describe('passport-instagram').addBatch({
+vows.describe('passport-eyeem').addBatch({
   
   'module': {
     'should report a version': function (x) {
-      assert.isString(instagram.version);
+      assert.isString(eyeem.version);
     },
   },
   

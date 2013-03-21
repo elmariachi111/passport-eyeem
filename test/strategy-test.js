@@ -1,28 +1,28 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var InstagramStrategy = require('passport-instagram/strategy');
+var EyeemStrategy = require('passport-eyeem/strategy');
 
 
-vows.describe('InstagramStrategy').addBatch({
+vows.describe('EyeemStrategy').addBatch({
   
   'strategy': {
     topic: function() {
-      return new InstagramStrategy({
+      return new EyeemStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
       function() {});
     },
     
-    'should be named instagram': function (strategy) {
-      assert.equal(strategy.name, 'instagram');
-    },
+    'should be named eyeem': function (strategy) {
+      assert.equal(strategy.name, 'eyeem');
+    }
   },
   
   'strategy when loading user profile': {
     topic: function() {
-      var strategy = new InstagramStrategy({
+      var strategy = new EyeemStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
@@ -54,7 +54,7 @@ vows.describe('InstagramStrategy').addBatch({
         assert.isNull(err);
       },
       'should load profile' : function(err, profile) {
-        assert.equal(profile.provider, 'instagram');
+        assert.equal(profile.provider, 'eyeem');
         assert.equal(profile.id, '1574083');
         assert.equal(profile.username, 'snoopdogg');
         assert.equal(profile.displayName, 'Snoop Doggy Dogg');
@@ -66,13 +66,13 @@ vows.describe('InstagramStrategy').addBatch({
       },
       'should set json property' : function(err, profile) {
         assert.isObject(profile._json);
-      },
-    },
+      }
+    }
   },
   
   'strategy when loading user profile and encountering an error': {
     topic: function() {
-      var strategy = new InstagramStrategy({
+      var strategy = new EyeemStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
@@ -106,8 +106,8 @@ vows.describe('InstagramStrategy').addBatch({
       },
       'should not load profile' : function(err, profile) {
         assert.isUndefined(profile);
-      },
-    },
-  },
+      }
+    }
+  }
   
 }).export(module);
