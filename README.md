@@ -1,4 +1,7 @@
 # Passport-Eyeem
+Please note that all credits for this lib go to [Jared Hanson](http://github.com/jaredhanson) who wrote
+the passport connector for Instagram. I basically only copied the code and replaced API endpoints and
+the application name ;)
 
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
 with [Eyeem](http://www.eyeem.com/) using the OAuth 2.0 API.
