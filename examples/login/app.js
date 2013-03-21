@@ -48,7 +48,7 @@ passport.use(new EyeemStrategy({
 
 
 
-var app = express.createServer();
+var app = module.exports = express();
 
 // configure Express
 app.configure(function() {
