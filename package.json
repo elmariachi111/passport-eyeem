@@ -1,6 +1,6 @@
 {
   "name": "passport-eyeem",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eyeem authentication strategy for Passport.",
   "keywords": ["passport", "eyeem", "auth", "authn", "authentication", "identity"],
   "repository": {
