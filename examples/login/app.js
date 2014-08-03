@@ -1,4 +1,5 @@
 var express = require('express')
+  , session = require('express-session')
   , passport = require('passport')
   , util = require('util')
   , EyeemStrategy = require('passport-eyeem').Strategy;
@@ -58,7 +59,11 @@ app.configure(function() {
   app.use(express.cookieParser());
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.session({ secret: 'keyboard cat' }));
+  app.use(session({ 
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true
+  }));
   // Initialize Passport!  Also use passport.session() middleware, to support
   // persistent login sessions (recommended).
   app.use(passport.initialize());
