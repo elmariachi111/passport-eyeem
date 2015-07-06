@@ -1,6 +1,6 @@
 {
   "name": "passport-eyeem",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Eyeem authentication strategy for Passport.",
   "keywords": ["passport", "eyeem", "auth", "authn", "authentication", "identity"],
   "repository": {
@@ -16,7 +16,7 @@
   },
   "licenses": [ {
     "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
+    "url": "http://www.opensource.org/licenses/MIT"
   } ],
   "main": "./lib/passport-eyeem",
   "dependencies": {
